@@ -69,9 +69,13 @@
 
 
     // Make a copy of the toppings array with slice()
+    const toppingsCopy = toppings.slice(0);
     // Make a copy of the toppings array with a spread
     // take out items 3 to 5 of your new toppings array with splice()
+    toppingsCopy.splice(3,5);
+
     // find the index of Avocado with indexOf() / lastIndexOf()
+    const avoIndex = toppings.indexOf('Avocado'); 
     // Check if hot sauce is in the toppings with includes()
     // add it if it's not
     // flip those toppings around with reverse()
@@ -81,6 +85,9 @@
     */
 
     // find the first rating that talks about a burger with find()
+    const burgRating = feedback.find(rating => rating.comment.includes('burg'));
+
+    console.log(burgRating);
     // find all ratings that are above 2 with filter()
     // find all ratings that talk about a burger with filter()
     // Remove the one star rating however you like!
@@ -99,3 +106,4 @@
 </body>
 
 </html>
+ 
